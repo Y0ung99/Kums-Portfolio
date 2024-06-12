@@ -200,6 +200,14 @@ button:focus {
   transform: rotate(-15deg) scale(1.2);
 }
 
+.spec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
 .jobs {
   text-align: start;
 }
@@ -221,6 +229,32 @@ button:focus {
 }
 
 .job__period {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+}
+
+.certs {
+  text-align: start;
+  margin-right: 8.5rem;
+}
+
+.cert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.cert__img {
+  width: 60px;
+  height: 60px;
+}
+
+.cert__name {
+  color: var(--color-primary);
+}
+
+.cert__period {
   color: var(--color-primary);
   font-size: 0.8rem;
 }
@@ -500,10 +534,23 @@ button:focus {
     max-width: 25rem;
   }
   
+  .spec {
+    flex-direction: column;
+  }
+
+  .certs {
+    margin-right: 4.5rem;
+  }
+
   .job {
     justify-content: center;
+
   }
-  
+
+  .cert {
+    align-items: center;
+  }
+
   .skills {
     grid-template-columns: 1fr;
   }
