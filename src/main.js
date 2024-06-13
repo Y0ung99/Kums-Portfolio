@@ -15,3 +15,13 @@ const homeHeight = homeContainer.offsetHeight;
 document.addEventListener('scroll', () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 })
+
+// Arrow-up 버튼을 
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
+})
