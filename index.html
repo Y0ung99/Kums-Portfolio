@@ -19,12 +19,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <!-- Fonts Awesome -->
     <script src="https://kit.fontawesome.com/dd806a9e3d.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -52,7 +55,7 @@
         <section id="home" class="section">
             <div class="home__container">
                 <img class="home__avatar" src="images/profile_nobg.png" alt="Kum's profile">
-                <h2 class="home__title">Hello <br /> I&#39;m <strong class="home__title--strong">Growing Every Day</strong>, Kum</h2>
+                <h2 class="home__title" aria-label="Hello, I'm Growing Developer Kum">Hello <br /> I&#39;m <strong class="home__title--strong">Developer</strong>, Kum</h2>
                 <p class="home__description">매일 성장하는 소프트웨어 엔지니어 KUM 입니다.</p>
                 <a class="home__contact" href="#contact">Contact Me</a>
             </div>
